@@ -14,7 +14,7 @@ SRC_URI="${SRC_BASE}${PN}-client_${PV}.${BUILD_ID_AMD64}_amd64.deb"
 LICENSE="Spotify"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="libnotify local-playback pax-kernel pulseaudio"
+IUSE="libnotify local-playback pax-kernel pulseaudio gnome"
 RESTRICT="mirror strip"
 
 BDEPEND="
@@ -39,7 +39,7 @@ RDEPEND="
 	x11-libs/libXtst
 	x11-libs/libSM
 	x11-libs/libICE
-	!gnome-extra/gnome-integration-spotify
+	gnome? ( gnome-extra/gnome-integration-spotify )
 "
 	#gnome-integration-spotify causes spotify to fail to launch
 	#sys-libs/glibc

@@ -1,0 +1,11 @@
+#!/bin/sh
+DIR=${HOME}/.d
+if [ -f "${DIR}"/drc ]; then
+	/bin/sh "${DIR}"/drc &
+else
+	while true; do
+		xsetroot -name "`date`"
+		sleep 1
+	done &
+fi
+exec /usr/bin/d
