@@ -5,8 +5,8 @@ EAPI=7
 
 inherit savedconfig toolchain-funcs
 
-DESCRIPTION="a dynamic window manager for X11"
-HOMEPAGE="https://d.suckless.org/"
+DESCRIPTION="make's dwm build with some nice patches"
+HOMEPAGE="https://github.com/keijo0/d"
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
