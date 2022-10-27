@@ -3,10 +3,6 @@ split-usr
 elibc_glibc
 kernel_linux
 userland_GNU
-opengl
-nvenc
 alsa
-pulseaudio
-X
 abi_x86_32
 native-symlinks
