@@ -295,7 +295,7 @@ KEYWORDS="~amd64"
 RDEPEND=">=dev-libs/openssl-1.1"
 
 DEPEND=">=dev-libs/openssl-1.1
-		>=dev-lang/rust-1.53.0"
+		virtual/rust"
 
 src_install() {
 	cargo_src_install
