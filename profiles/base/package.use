@@ -52,7 +52,6 @@ app-admin/sudo -ldap
 net-nds/openldap -cxx
 
 app-emulation/libvirt qemu udev virt-network libvirtd caps
-app-emulation/* fdt shared
 app-emulation/qemu aio bzip2 caps curl fdt filecaps gnutls jpeg ncurses nls oss pin-upstream-blobs png slirp vhost-net vnc xattr zstd
 app-emulation/virt-manager gui
 app-emulation/fuse zlib png -alsa backend-X
