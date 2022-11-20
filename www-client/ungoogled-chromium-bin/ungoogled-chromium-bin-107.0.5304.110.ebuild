@@ -34,7 +34,7 @@ RESTRICT="mirror"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="convert-dict core2 +generic haswell"
+IUSE="convert-dict core2 +generic haswell +cups"
 
 REQUIRED_USE="
 	^^ ( core2 generic haswell )
@@ -54,7 +54,7 @@ CDEPEND="
 	x11-libs/libXtst
 	x11-libs/libxcb
 	media-libs/libva
-	>=net-print/cups-1.3.11
+	cups? ( >=net-print/cups-1.3.11 )
 	dev-libs/expat
 	dev-libs/glib:2
 	>=dev-libs/libxml2-2.9.4-r3[icu]
