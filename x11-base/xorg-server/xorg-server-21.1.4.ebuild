@@ -11,11 +11,11 @@ EGIT_REPO_URI="https://gitlab.freedesktop.org/xorg/xserver.git"
 DESCRIPTION="X.Org X servers"
 SLOT="0/${PV}"
 if [[ ${PV} != 9999* ]]; then
-	KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux"
+	KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux"
 fi
 
 IUSE_SERVERS="xephyr xnest xorg xvfb"
-IUSE="${IUSE_SERVERS} debug +elogind minimal selinux suid systemd test +udev unwind xcsecurity"
+IUSE="${IUSE_SERVERS} debug +elogind minimal selinux suid systemd test +udev unwind xcsecurity +xinit"
 RESTRICT="!test? ( test )"
 
 CDEPEND="
@@ -36,6 +36,7 @@ CDEPEND="
 	>=x11-libs/pixman-0.27.2
 	>=x11-misc/xbitmaps-1.0.1
 	>=x11-misc/xkeyboard-config-2.4.1-r3
+	xinit? ( >=x11-apps/xinit-1.3.3-r1 )
 	xorg? (
 		>=x11-libs/libxcvt-0.1.0
 	)
