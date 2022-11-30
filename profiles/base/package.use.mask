@@ -522,14 +522,6 @@ sys-kernel/linux-firmware initramfs
 # Requires dev-libs/gumbo which is only keyworded for amd64 and x86
 mail-client/claws-mail litehtml
 
-# Ulrich Müller <ulm@gentoo.org> (2019-05-18)
-# Firmware images without a known license. Most likely, upstream
-# redistribution may conflict with the licenses or lack thereof
-# on the images. Check the WHENCE file in the package for specific
-# terms. Masked to prevent accidental installation of these files,
-# bug #318841#c20.
-sys-kernel/linux-firmware unknown-license
-
 # Virgil Dupras <vdupras@gentoo.org> (2019-04-29)
 # Docs are temporarily broken. See bug #680014
 dev-python/pandas doc
