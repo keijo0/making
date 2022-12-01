@@ -42,6 +42,7 @@ DEPEND="
 	~media-libs/imgui-1.81[opengl,vulkan]
 	dev-libs/spdlog
 	dev-util/glslang
+	dev-cpp/nlohmann_json
 	>=dev-util/vulkan-headers-1.2
 	media-libs/vulkan-loader
 	media-libs/libglvnd
