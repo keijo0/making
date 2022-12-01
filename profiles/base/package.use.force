@@ -1,15 +1,3 @@
-app-emulation/libvirt qemu udev virt-network libvirtd caps
-app-emulation/qemu aio bzip2 caps curl fdt filecaps gnutls jpeg ncurses nls oss pin-upstream-blobs png slirp vhost-net vnc xattr zstd
-app-emulation/virt-manager gui
-app-emulation/fuse zlib png -alsa backend-X
-app-emulation/winetricks gtk
-app-emulation/libspectrum zlib
-sys-firmware/edk2-ovmf binary
-sys-firmware/ipxe binary qemu
-sys-firmware/seabios seavgabios binary
-sys-firmware/sgabios binary
-app-emulation/wine-staging xinerama gstreamer udev fontconfig gecko mono run-exes ssl truetype vulkan llvm-libunwind abi_x86_64
-
 
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
