@@ -13,7 +13,7 @@ amd64		default/linux/amd64/17.1					stable
 #use profile with ecare it does not very much worky for the average system
 
 # Linux Profiles
-amd64-linux		prefix/linux/amd64				exp
+#amd64-linux		prefix/linux/amd64				exp
 
 # vim: set ts=8 noet ft=conf:
 
