@@ -12,11 +12,6 @@ postgres_targets_postgres15
 # PHP 8.2 is in RC
 php_targets_php8-2
 
-# Sam James <sam@gentoo.org> (2022-08-02)
-# Masked for testing. The split of some packages may still
-# change. bug #838970.
-qt6
-
 # Matt Turner <mattst88@gentoo.org> (2022-04-16)
 # dev-util/sysprof not keyworded on most arches yet
 sysprof
@@ -49,10 +44,6 @@ ros_messages_eus
 # Matt Turner <mattst88@gentoo.org> (2019-09-01)
 # app-office/texmacs is package.mask'd. Bug #436400
 texmacs
-
-# Matt Turner <mattst88@gentoo.org> (2018-11-11)
-# d3d9 only works on amd64/x86.
-d3d9
 
 # winssl is for prefix/windows/winnt only
 winssl
