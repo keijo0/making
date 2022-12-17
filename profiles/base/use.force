@@ -1,6 +1,1 @@
-libglvnd
-elibc_glibc
-kernel_linux
-userland_GNU
-alsa
-native-symlinks
+
