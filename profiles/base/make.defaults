@@ -86,7 +86,7 @@ XTABLES_ADDONS="quota2 psd pknock lscan length2 ipv4options ipset ipp2p iface ge
 
 # Robert Buchholz <rbu@gentoo.org> (2006-01-17)
 # Some common lcd devices
-L#CD_DEVICES="bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text"
+#LCD_DEVICES="bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text"
 
 # Manuel Rüger <mrueg@gentoo.org> (2015-09-09)
 # Default Ruby build target(s)
