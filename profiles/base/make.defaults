@@ -54,42 +54,31 @@ ELIBC="glibc"
 KERNEL="linux"
 USERLAND="GNU"
 INPUT_DEVICES="libinput"
-
-# Accept only licenses in the FREE license group, i.e., with
-# the freedom to use, share, modify and share modifications
-ACCEPT_LICENSE="-* @FREE"
-
-# Tomáš Chvátal <scarabeus@gentoo.org> (2013-03-23)
-# By default enable libreoffice implementation only.
+ACCEPT_LICENSE="*"
 OFFICE_IMPLEMENTATION="libreoffice"
-
-# Tomáš Chvátal <scarabeus@gentoo.org> (2011-08-12)
-# By default do not build any grub platform and let it guess.
-GRUB_PLATFORMS=""
-
 # Tomáš Chvátal <scarabeus@gentoo.org> (2013-05-05)
 # By default enable all extensions with no dependencies
-LIBREOFFICE_EXTENSIONS="presenter-console presenter-minimizer"
+#LIBREOFFICE_EXTENSIONS="presenter-console presenter-minimizer"
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2011-08-19, 2012-03-25)
 # Johannes Huber <johu@gentoo.org> (2018-04-15)
 # Andreas Sturmlechner <asturm@gentoo.org> (2019-01-01)
 # By default build all calligra features (except unmaintained: stage).
-CALLIGRA_FEATURES="karbon sheets words"
+#CALLIGRA_FEATURES="karbon sheets words"
 
 # Andreas K. Huettel <dilfridge@gentoo.org> (2010-09-28)
 # Small default list of enabled plugins for collectd
-COLLECTD_PLUGINS="df interface irq load memory rrdtool swap syslog"
+#COLLECTD_PLUGINS="df interface irq load memory rrdtool swap syslog"
 
 # Tomáš Chvátal <scarabeus@gentoo.org> (2010-10-26)
 # By default enable all protocols for average GPS user
-GPSD_PROTOCOLS="ashtech aivdm earthmate evermore fv18 garmin garmintxt gpsclock greis isync itrax mtk3301 nmea ntrip navcom oceanserver oldstyle oncore rtcm104v2 rtcm104v3 sirf skytraq superstar2 timing tsip tripmate tnt ublox ubx"
+#GPSD_PROTOCOLS="ashtech aivdm earthmate evermore fv18 garmin garmintxt gpsclock greis isync itrax mtk3301 nmea ntrip navcom oceanserver oldstyle oncore rtcm104v2 rtcm104v3 sirf skytraq superstar2 timing tsip tripmate tnt ublox ubx"
 
 # Benedikt Böhm <hollow@gentoo.org> (2007-11-27)
 # Sane defaults for built-in apache modules
 # Patrick Lauer <patrick@gentoo.org> (2012-10-12)
 # extend for apache 2.4
-APACHE2_MODULES="authn_core authz_core socache_shmcb unixd actions alias auth_basic authn_alias authn_anon authn_dbm authn_default authn_file authz_dbm authz_default authz_groupfile authz_host authz_owner authz_user autoindex cache cgi cgid dav dav_fs dav_lock deflate dir disk_cache env expires ext_filter file_cache filter headers include info log_config logio mem_cache mime mime_magic negotiation rewrite setenvif speling status unique_id userdir usertrack vhost_alias"
+#APACHE2_MODULES="authn_core authz_core socache_shmcb unixd actions alias auth_basic authn_alias authn_anon authn_dbm authn_default authn_file authz_dbm authz_default authz_groupfile authz_host authz_owner authz_user autoindex cache cgi cgid dav dav_fs dav_lock deflate dir disk_cache env expires ext_filter file_cache filter headers include info log_config logio mem_cache mime mime_magic negotiation rewrite setenvif speling status unique_id userdir usertrack vhost_alias"
 
 # Peter Volkov <pva@gentoo.org> (2010-04-29)
 # Set some defaults or package will fail to build (Check mconfig in package sources)
@@ -97,7 +86,7 @@ XTABLES_ADDONS="quota2 psd pknock lscan length2 ipv4options ipset ipp2p iface ge
 
 # Robert Buchholz <rbu@gentoo.org> (2006-01-17)
 # Some common lcd devices
-LCD_DEVICES="bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text"
+L#CD_DEVICES="bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text"
 
 # Manuel Rüger <mrueg@gentoo.org> (2015-09-09)
 # Default Ruby build target(s)
@@ -110,12 +99,12 @@ USE="${USE} xattr"
 
 # Mike Gilbert <floppym@gentoo.org> (2019-07-14)
 # Enable split-usr by default to keep existing installs as-is.
-USE="${USE} split-usr"
+#USE="${USE} split-usr"
 
 # Tiziano Müller <dev-zero@gentoo.org> (2010-01-24)
 # We usually don't want python to (re)write .py[co] files during phase runs
 # since it could cause sandbox violations
-PYTHONDONTWRITEBYTECODE="1"
+#PYTHONDONTWRITEBYTECODE="1"
 
 # Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (2011-11-16)
 # Add default USE value for bootstrap and rename it from STAGE1_USE to BOOTSTRAP_USE
@@ -123,7 +112,7 @@ PYTHONDONTWRITEBYTECODE="1"
 # This MUST be kept in sync with the PYTHON_TARGETS below
 # Mike Gilbert <floppym@gentoo.org> (2018-05-23)
 # sys-apps/baselayout-2.5 needs split-usr enabled.
-BOOTSTRAP_USE="unicode internal-glib pkg-config split-usr xml python_targets_python3_10"
+BOOTSTRAP_USE="unicode internal-glib pkg-config xml python_targets_python3_10"
 
 # Mike Gilbert <floppym@gentoo.org> (2012-05-15)
 # Default target(s) for python-r1.eclass
@@ -135,8 +124,8 @@ PYTHON_SINGLE_TARGET="python3_10"
 # 1) do not uninstall kernel modules/dtbs and therefore allow replacing them,
 # 2,3) removed wrt bug #663170,
 # 4) protect /var/{run,lock} symlinks for bug 519620
-COLLISION_IGNORE="/boot/dtbs/* /lib/modules/*"
-UNINSTALL_IGNORE="/boot/dtbs/* /lib/modules/* /var/run /var/lock"
+COLLISION_IGNORE="/lib/modules/*"
+UNINSTALL_IGNORE="/lib/modules/* /var/run /var/lock"
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2013-08-23)
 # Make emerge messages default to English as per Council decision
