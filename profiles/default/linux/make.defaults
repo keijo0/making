@@ -8,7 +8,7 @@
 # implications with core packages.  For example, if "java" is in USE and db 
 # has a conditional dependency on java (which it does,) then a JDK will be 
 # pulled in during *emerge system*!
-USE=ncurses nls ssl zlib zstd"
+USE="ncurses nls ssl zlib zstd"
 
 USE="${USE} fortran openmp cli pcre"
 
