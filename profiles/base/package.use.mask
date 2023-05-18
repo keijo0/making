@@ -1,71 +1,27 @@
 ~net-libs/gnutls-3.7.8 verify-sig
 <app-emulation/libvirt-8.0.0 wireshark-plugins
-
 sys-libs/zlib-ng compat
 sys-libs/minizip-ng compat
-
-
 >=app-text/evince-43.0 nautilus
-
-=sci-libs/rocFFT-5.1.3 amdgpu_targets_gfx906
-=sci-libs/hipFFT-5.1.3 amdgpu_targets_gfx906
-
 =dev-util/schroot-1.6.13_p2 nls
-
 dev-lang/rust llvm-libunwind
-
-app-antivirus/clamav jit
-
-app-arch/lbzip2 symlink
-app-arch/pbzip2 symlink
-app-arch/pigz symlink
-
 sys-devel/binutils gprofng
-
 sys-devel/mold system-tbb
-
 media-sound/darkice aacplus
-
 app-metrics/collectd collectd_plugins_slurm
 sys-cluster/openmpi openmpi_rm_slurm
-
 dev-python/QtPy pyqt6 pyside6
-
 app-text/xdvik Xaw3d
-
 sci-physics/bullet tbb
-
 >=dev-lang/rust-1.62.0 miri
-
 sys-libs/glibc stack-realign
 sys-libs/ncurses stack-realign
-
 >=net-libs/libproxy-0.4.18 spidermonkey
-
 >=sci-mathematics/coq-8.15.0 doc
-
->=www-client/chromium-104 pgo
-
 dev-python/jupyter_server doc
-
->=mail-client/thunderbird-100.0 system-python-libs
->=www-client/firefox-100.0 system-python-libs
-
 net-misc/aria2 gnutls
-
->=gnome-base/gvfs-1.50 http
-
-net-libs/ngtcp2 openssl
-
->=dev-games/mygui-3.4.1 ogre
-
-app-misc/gramps berkdb
-
 media-video/pipewire system-service
 media-video/wireplumber system-service
-<sys-devel/gcc-10.4:10 -pch
-=sys-devel/gcc-9* -pch
-=sys-devel/gcc-8* -pch
 dev-util/rizin test
 sci-libs/flann doc
 media-video/mjpg-streamer http-management
@@ -74,7 +30,6 @@ media-video/mjpg-streamer http-management
 app-text/texlive pdfannotextractor
 
 dev-java/openjdk:17 javafx
-
 =sys-fs/dd-rescue-1.99.11 cpu_flags_x86_avx2
 
 x11-misc/read-edid vbe-mode
@@ -83,38 +38,6 @@ x11-misc/read-edid vbe-mode
 >sys-devel/binutils-hppa64-2.37_p1 default-gold
 
 dev-lang/rust parallel-compiler
-
->=www-client/chromium-94 system-ffmpeg
-
->=mail-filter/rspamd-3.0 jemalloc
-
-gui-libs/gtk ffmpeg vulkan
-
-dev-libs/libffi exec-static-trampoline
-
->=sci-libs/pastix-6.0.0 mpi
-
-dev-lang/gnat-gpl:10 lto
-
-sys-kernel/dracut test
-
-<sys-cluster/ceph-16 diskprediction
-
-kde-plasma/plasma-meta firewall
-
-dev-libs/efl mono
-
-net-analyzer/wireshark lto
-
-net-misc/openssh debug
-
-dev-lang/php jit
-
-sci-libs/gdal doc
-
-www-client/seamonkey lto
-
-www-servers/apache apache2_modules_lua
 
 <dev-php/PEAR-Crypt_GPG-1.6.4 test
 dev-php/PEAR-Text_Wiki_Mediawiki test
@@ -127,15 +50,6 @@ dev-php/symfony-config test
 dev-php/symfony-event-dispatcher test
 dev-php/symfony-filesystem test
 dev-php/symfony-finder test
-
-app-i18n/enca doc
-
-net-wireless/gr-osmosdr xtrx
-
-app-office/abiword ots
-
-x11-libs/colord-gtk doc
-
 <dev-ml/llvm-ocaml-14 llvm_targets_VE
 <sys-devel/clang-14 llvm_targets_VE
 <sys-devel/llvm-14 llvm_targets_VE
@@ -148,197 +62,3 @@ x11-libs/colord-gtk doc
 <dev-ml/llvm-ocaml-16 llvm_targets_M68k llvm_targets_SPIRV
 <sys-devel/clang-16 llvm_targets_M68k llvm_targets_SPIRV
 <sys-devel/llvm-16 llvm_targets_M68k llvm_targets_SPIRV
-
-mail-mta/proton-mail-bridge gui
-
-net-im/telepathy-connection-managers gadu icq meanwhile steam yahoo
-
-dev-libs/efl efl-one
-
-app-metrics/collectd collectd_plugins_onewire
-
-dev-db/mariadb columnstore
-
-dev-python/autobahn xbr
-
->=www-client/chromium-84 headless
-
-media-gfx/inkscape jemalloc
-
-www-client/chromium component-build
-
-net-fs/samba test
-
-dev-util/meson test
-
-sys-devel/gcc ada
-
-<=dev-util/rosinstall-0.7.8 test
-<=dev-util/wstool-0.1.18 test
-
-sci-physics/root cudnn
-
-mail-client/thunderbird eme-free
-www-client/firefox eme-free
-
-dev-python/pyzmq doc
-
-sci-chemistry/gromacs python
-
-dev-games/openscenegraph fox
-dev-libs/hidapi fox
-sci-mathematics/gsl-shell fox
-
-dev-python/matplotlib doc
-dev-python/pandas doc
-dev-python/pandas-datareader doc
-dev-python/statsmodels doc
-
->app-shells/mksh-57-r1 static
-
->=sys-libs/glibc-2.33-r2 crypt
-<sys-libs/libxcrypt-4.4.23-r1 split-usr system
-
-net-libs/ngtcp2 ssl
-net-misc/curl nghttp3
-
->=mail-client/thunderbird-68 pgo
-
-www-client/elinks guile
-
->=dev-lang/nqp-2019.07 java
-
-sys-kernel/linux-firmware initramfs
-
-mail-client/claws-mail litehtml
-
-dev-python/pandas doc
-
-app-text/ghostscript-gpl l10n_ja
-
-app-admin/conserver freeipmi
-
-sys-apps/memtest86+ floppy
-
-dev-lang/gnat-gpl go
-
-dev-lang/gnat-gpl jit
-
-dev-python/paramiko server
-
-sys-devel/binutils cet
-sys-devel/binutils-hppa64 cet
-sys-devel/gdb cet
-sys-libs/binutils-libs cet
-sys-libs/glibc cet
-sys-devel/gcc cet
-
-sys-block/fio static
-
-sci-libs/ipopt hsl
-
-net-fs/samba ceph
-
-app-emulation/fuse backend-svga
-
-virtual/mysql embedded
-
-dev-db/mariadb client-libs
-dev-db/mysql client-libs
-
-<sys-libs/glibc-2.29-r4 compile-locales
-
->=gnome-base/gnome-settings-daemon-3.24 test
-
-media-video/ffmpeg appkit
-
-sys-libs/glibc vanilla
-
-net-analyzer/nrpe command-args
-
-app-emulation/libvirt openvz
-
-sys-boot/gnu-efi custom-cflags
-sys-boot/refind custom-cflags
-
-sci-libs/linux-gpib php
-
-~media-libs/libcaca-0.99_beta19 ruby
-
-sys-devel/gcc pie
-
-sys-boot/grub:2 test
-
-net-fs/samba system-heimdal
-
-net-proxy/haproxy 51degrees
-net-proxy/haproxy wurfl
-
-net-irc/hexchat theme-manager
-
-app-editors/emacs:25 cairo
-app-editors/emacs:26 cairo
-
->=dev-lang/rakudo-2016.05 java
-
-sys-devel/gcc vtv
-
-dev-lang/moarvm asan
-
-dev-java/icedtea cacao jamvm
-
->=net-wireless/wpa_supplicant-2.5 wimax
-
-dev-lang/python berkdb
-
-games-strategy/freeciv system-lua
-
-app-admin/clsync cluster mhash
-
-app-text/groonga lzo zlib
-
-net-analyzer/nmap system-lua
-
-sys-devel/gcc sanitize
-
-dev-libs/elfutils threads
-
-media-libs/cogl gstreamer
-
-media-libs/libsdl2 custom-cflags
-
-x11-libs/cairo gles2-only
-
-app-doc/doxygen sqlite
-
-gnustep-apps/cynthiune flac
-
-dev-python/pyocr cuneiform
-
-media-libs/avidemux-core system-ffmpeg
-
-www-client/firefox pgo
-
-net-analyzer/net-snmp pci
-
-sys-auth/pam_mktemp prevent-removal
-
->=gnustep-base/gnustep-make-2.6.2 libobjc2
-
-app-arch/libarchive e2fsprogs
-
-sys-devel/gcc libssp
-
-sci-libs/mathgl octave
-
-net-dns/pdnsd urandom
-
-dev-lisp/clisp svm
-
-media-sound/pulseaudio-daemon system-wide
-
-media-video/vlc directx
-
-media-libs/opencv contribovis
-
-media-sound/puddletag quodlibet
