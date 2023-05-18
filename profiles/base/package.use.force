@@ -1,6 +1,5 @@
 >=sys-cluster/ceph-17.2.1 system-boost
 net-im/telegram-desktop jemalloc
-sys-devel/clang pie
 dev-java/openjdk:11 system-bootstrap
 dev-java/openjdk:17 system-bootstrap
 >=sys-devel/clang-13.0.1_rc llvm_targets_AArch64 llvm_targets_AMDGPU
@@ -23,14 +22,10 @@ dev-java/openjdk:17 system-bootstrap
 >=sys-devel/llvm-13.0.1_rc llvm_targets_X86 llvm_targets_XCore
 >=sys-devel/llvm-14 llvm_targets_VE
 >=sys-devel/llvm-16 llvm_targets_LoongArch
-
 <sys-libs/glibc-2.33-r2 crypt
 sys-libs/libxcrypt system compat
-
 app-text/vilistextum unicode
-
 dev-lang/python-exec native-symlinks
-
 sys-libs/readline unicode
 app-editors/nano unicode
 app-admin/metalog unicode
@@ -39,34 +34,22 @@ app-arch/zip unicode
 sys-apps/util-linux unicode
 sys-process/procps unicode
 app-text/ghostscript-gpl unicode
-
 >=games-roguelike/tomenet-4.7.3 X
-
 sys-apps/kmod tools
-
 sys-devel/gcc-config cc-wrappers
-
 sys-devel/binutils-config native-symlinks
 sys-devel/gcc-config      native-symlinks
 sys-devel/gcc-config      cc-wrappers
-
 sys-kernel/gentoo-kernel savedconfig
 sys-kernel/vanilla-kernel savedconfig
-
 net-misc/wget ssl
-
 sys-libs/libcxx libcxxabi
-
 sys-kernel/vanilla-kernel initramfs
 media-sound/lilypond guile2
 sys-devel/gcc cxx
-
-sys-devel/gcc pie
 sys-libs/glibc static-libs
 sys-libs/ncurses tinfo
 sys-libs/ncurses-compat tinfo
-gnome-base/gnome-desktop seccomp
-app-misc/tracker-miners seccomp
 net-libs/webkit-gtk seccomp
 sys-firmware/seabios binary
 net-analyzer/snort libtirpc
