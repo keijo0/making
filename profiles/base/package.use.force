@@ -1,5 +1,4 @@
 >=sys-cluster/ceph-17.2.1 system-boost
-net-im/telegram-desktop jemalloc
 dev-java/openjdk:11 system-bootstrap
 dev-java/openjdk:17 system-bootstrap
 >=sys-devel/clang-13.0.1_rc llvm_targets_AArch64 llvm_targets_AMDGPU
@@ -38,13 +37,9 @@ app-text/ghostscript-gpl unicode
 sys-apps/kmod tools
 sys-devel/gcc-config cc-wrappers
 sys-devel/binutils-config native-symlinks
-sys-devel/gcc-config      native-symlinks
-sys-devel/gcc-config      cc-wrappers
-sys-kernel/gentoo-kernel savedconfig
-sys-kernel/vanilla-kernel savedconfig
+sys-devel/gcc-config      native-symlinks cc-wrappers
 net-misc/wget ssl
 sys-libs/libcxx libcxxabi
-sys-kernel/vanilla-kernel initramfs
 media-sound/lilypond guile2
 sys-devel/gcc cxx
 sys-libs/glibc static-libs
@@ -57,7 +52,6 @@ net-fs/autofs libtirpc
 net-misc/netkit-bootparamd libtirpc
 sci-astronomy/esomidas libtirpc
 sys-cluster/glusterfs libtirpc
-media-tv/kodi system-ffmpeg
 >=dev-games/simgear-2016.2.1 dns
 >=net-fs/netatalk-3.1.3 acl
 www-client/chromium pic
