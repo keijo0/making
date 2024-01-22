@@ -53,7 +53,6 @@
 *sys-devel/binutils
 *sys-devel/gcc
 *sys-devel/gnuconfig
-*sys-devel/make
 *>=sys-devel/patch-2.7
 *sys-fs/e2fsprogs
 *virtual/dev-manager
