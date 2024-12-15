@@ -169,9 +169,6 @@ media-video/mpv lua_single_target_luajit
 # so force the flag on until problem fixed upstream
 >=sys-cluster/ceph-17.2.1 system-boost
 
-# Sam James <sam@gentoo.org> (2022-02-11)
-# Always build with PIE-default, just like GCC.
-llvm-core/clang pie
 
 # Arthur Zamarin <arthurzam@gentoo.org> (2022-01-13)
 # Force to use installed openjdk{,-bin} for bootstrapping
@@ -291,10 +288,6 @@ llvm-runtimes/libcxx libcxxabi
 # to have a compiler not capable of C++, bug #692126.
 sys-devel/gcc cxx
 
-# Andreas K. Hüttel <dilfridge@gentoo.org> (2017-05-27)
-# Force default-PIE build on 17.0 profiles and later.
-# Moved here from releases/17.0 (2022-10-22)
-sys-devel/gcc pie
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2019-04-14)
 # Make sure glibc static libs are installed for now. Not installing
